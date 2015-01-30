@@ -2,8 +2,8 @@
 
 
 class depart {
-    let sname :[String] = ["CAG", "IS", "IT","Gis","CS","MC"]
-    let fname:[String] = ["computer animations and game", "information science", "information technology","geo-informatics","computer science","mass communication"]
+    var sname :[String] = ["CAG", "IS", "IT","Gis","CS","MC"]
+    var fname:[String] = ["computer animations and game", "information science", "information technology","geo-informatics","computer science","mass communication"]
     
     let n:String
     init(nn:String){
@@ -19,6 +19,7 @@ class depart {
         }
         return out
     }
+
 }
 let answer = depart(nn: "CS")
 answer.search()
