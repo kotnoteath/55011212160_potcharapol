@@ -2,7 +2,7 @@
 
 let animal:[String:String] = ["ant":"sugar","bat":"blood","cat":"fish","dragon":"human"]
 
-let anieat="ant"
+let anieat="cat"
     println(animal[anieat])
 
 
