@@ -28,8 +28,8 @@ class ViewController: UIViewController {
         self.blueSquare.frame = redSquare.frame
         
         // set background colors
-        self.redSquare.backgroundColor = UIColor.redColor()
-        self.blueSquare.backgroundColor = UIColor.blueColor()
+        self.redSquare.backgroundColor = UIColor.blueColor()
+        self.blueSquare.backgroundColor = UIColor.greenColor()
         
         // for now just add the redSquare
         // we'll add blueSquare as part of the transition animation

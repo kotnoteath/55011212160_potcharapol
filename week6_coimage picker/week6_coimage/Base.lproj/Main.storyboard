@@ -14,26 +14,17 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HcP-zI-PeP">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="375"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HcP-zI-PeP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HcP-zI-PeP" secondAttribute="height" multiplier="8:5" id="9YM-RN-1Xg"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCP-Ni-e8b">
-                                <rect key="frame" x="16" y="562" width="156" height="30"/>
-                                <state key="normal" title="Save to Album Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="savePhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gpd-gZ-GQO"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCL-z0-vX3">
-                                <rect key="frame" x="428" y="550" width="156" height="30"/>
+                                <rect key="frame" x="210" y="529" width="156" height="30"/>
                                 <state key="normal" title="Photo Album Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,11 +33,20 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4.5" minValue="-0.5" maxValue="7.5" translatesAutoresizingMaskIntoConstraints="NO" id="2OP-wD-XWf">
-                                <rect key="frame" x="168" y="383" width="216" height="31"/>
+                                <rect key="frame" x="55" y="380" width="216" height="31"/>
                                 <connections>
                                     <action selector="amountSliderValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="dDY-DV-3Ts"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCP-Ni-e8b">
+                                <rect key="frame" x="0.0" y="529" width="156" height="30"/>
+                                <state key="normal" title="Save to Album Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="savePhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gpd-gZ-GQO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -55,6 +55,7 @@
                             <constraint firstItem="HcP-zI-PeP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="qHD-4C-ctb"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="amountSlider" destination="2OP-wD-XWf" id="pOb-kS-GcO"/>
                         <outlet property="imageView" destination="HcP-zI-PeP" id="w4E-fV-Li2"/>
@@ -62,6 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="298.5" y="377.5"/>
         </scene>
     </scenes>
 </document>

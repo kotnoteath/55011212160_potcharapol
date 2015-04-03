@@ -29,14 +29,14 @@ class ViewController: UIViewController {
         for loopNumber in 1...numberOfFish {
             
             // set up some constants for the animation
-            let duration = 0.5
+            let duration = 2.0
             let options = UIViewAnimationOptions.CurveLinear
             
             // randomly assign a delay of 0.9 to 1s
             let delay = NSTimeInterval(900 + arc4random_uniform(100)) / 1000
             
             // set up some constants for the fish
-            let size : CGFloat = CGFloat( arc4random_uniform(40))+20
+            let size : CGFloat = CGFloat( arc4random_uniform(30))+15
             let yPosition : CGFloat = CGFloat( arc4random_uniform(400))+20
             
             // create the fish
